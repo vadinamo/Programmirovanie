@@ -56,7 +56,7 @@ void lengthCalculation(float X1, float Y1, float Y2, float X2, float *side)
     *side = sqrt(pow(X2 - X1, 2) + pow(Y2 - Y1, 2));
 }
 
-float perimeterCalc(float AB, float BC, float AC)
+float PCalc(float AB, float BC, float AC)
 {
     float Perimeter = AB + BC + AC;
     return Perimeter;
@@ -114,7 +114,7 @@ int main()
 
         triangleType(AB, BC, AC);
 
-        printf("Perimeter of a triangle:\nP=%f\n\n", perimeterCalc(AB, BC, AC));
+        printf("Perimeter of a triangle:\nP=%f\n\n", PCalc(AB, BC, AC));
 
         areaCalculation(AB, BC, AC, &S);
         printf("Area of a triangle:\nS=%f\n\n", S);
