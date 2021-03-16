@@ -1,7 +1,7 @@
-all: lab2task1 test
+all: lab2 test
 
-lab2task1: main.c
-	gcc -pedantic -ansi -o lab2task1 main.c
+lab2: main.c
+	gcc -pedantic -ansi -o lab2 main.c -lm
 
 test: main.c main_test.c
-gcc -pedantic -ansi -o test -D TESTING main.c main_test.c
+	gcc -pedantic -ansi -o test -D TESTING main.c main_test.c -lm

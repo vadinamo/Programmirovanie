@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/vadinamo/Documents/программирование/lab2/lab2task2/main.c
+stdio.h
+-
+math.h
+-
+main.h
+/Users/vadinamo/Documents/программирование/lab2/lab2task2/main.h
+
+/Users/vadinamo/Documents/программирование/lab2/lab2task2/main.h
+stdio.h
+-
+math.h
+-
+

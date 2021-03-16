@@ -16,7 +16,7 @@ float circumscribedRadius_test()
 
 float inscribedRadius_test()
 {
-    assert(circumscribedRadius(3, 4, 5, 6) == 1);
+    assert(inscribedRadius(3, 4, 5, 6) == 1);
     return 1;
 }
 

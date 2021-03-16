@@ -6,8 +6,8 @@ void inputCheck(float *enteredNumber)
 {
     while (!scanf("%f", enteredNumber))
     {
-            while (getchar() != '\n') {}
-            printf("\nError!\n\nEnter your natural number.\nm=");
+        while (getchar() != '\n') {}
+        printf("\nError!\n\nEnter your natural number.\nm=");
     }
 }
 
