@@ -1,0 +1,7 @@
+all: lab2 test
+
+lab2: main.c
+	gcc -pedantic -ansi -o lab2 main.c
+
+test: main.c main_test.c
+gcc -pedantic -ansi -o test -D TESTING main.c main_test.c

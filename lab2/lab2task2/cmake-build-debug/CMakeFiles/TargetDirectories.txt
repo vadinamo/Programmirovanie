@@ -1,0 +1,3 @@
+/Users/vadinamo/Documents/программирование/lab2/lab2task2/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/vadinamo/Documents/программирование/lab2/lab2task2/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/vadinamo/Documents/программирование/lab2/lab2task2/cmake-build-debug/CMakeFiles/lab2task2.dir
