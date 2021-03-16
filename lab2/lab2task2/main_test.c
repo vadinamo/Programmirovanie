@@ -1,4 +1,4 @@
-/*#include <assert.h>
+#include <assert.h>
 #include <stdio.h>
 #include "main.h"
 
@@ -15,4 +15,4 @@ int main()
     factorialCalc_test();
     printf("Test succesfully completed");
     return 0;
-}*/
+}
