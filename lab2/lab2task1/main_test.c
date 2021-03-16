@@ -2,9 +2,9 @@
 #include <stdio.h>
 #include "main.h"
 
-float perimeterСalculation_test()
+float perimСalculation_test()
 {
-    assert(perimeterСalculation(2, 3, 4) == 9);
+    assert(perimСalculation(2, 3, 4) == 9);
     return 1;
 }
 
@@ -24,7 +24,7 @@ float inscribedRadius_test()
 
 int main()
 {
-    perimeterСalculation_test();
+    perimСalculation_test();
     circumscribedRadius_test();
     inscribedRadius_test();
     printf("Test succesfully completed");
