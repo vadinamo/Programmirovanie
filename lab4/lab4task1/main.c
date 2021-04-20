@@ -52,6 +52,8 @@ int main() {
         lines++;
     }
 
+    free(str);
+
     printf("Your text with reversed words:\n");
 
     text[lines - 1][columns[lines]] = ' ';
@@ -62,6 +64,9 @@ int main() {
         }
         printf("\n");
     }
+
+    free(columns);
+    free(text);
 }
 
 #endif
