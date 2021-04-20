@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/vadinamo/Documents/программирование/lab4/lab4task1/main.c
+main.h
+/Users/vadinamo/Documents/программирование/lab4/lab4task1/main.h
+
+/Users/vadinamo/Documents/программирование/lab4/lab4task1/main.h
+stdio.h
+/Users/vadinamo/Documents/программирование/lab4/lab4task1/stdio.h
+stdlib.h
+/Users/vadinamo/Documents/программирование/lab4/lab4task1/stdlib.h
+
