@@ -48,7 +48,7 @@ int Palindrome_test(){
 int ToStack_test(){
     struct stack *stk;
     stk = (struct stack*)malloc(sizeof(struct stack));
-    assert(ToStack(stk, "123321") == 0);
+    assert(ToStack(stk, "1233221") == 0);
 
     return 1;
 }
