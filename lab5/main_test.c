@@ -36,7 +36,7 @@ int Palindrome_test(){
 
     assert(Palindrome(stk) == 0);
 
-    for(i = 9; i >= 0; i--) {
+    for(i = 10; i >= 0; i--) {
         Add(stk, i);
     }
 
