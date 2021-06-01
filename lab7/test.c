@@ -21,7 +21,7 @@ void test() {
     for(i = 0; i < 20; i++) {
         c = i + '0' + '1';
         *pChar = c;
-        patient = patientCreate(pChar, pChar, i + 729000, pChar, i, i, i);
+        patient = patientCreate(pChar, pChar, i + 729400, pChar, i + 737703, i + 738007, i);
         doctor = doctorCreate(pChar, pChar, pChar);
         departmentAddInformation(department, patient, doctor);
         doctorAdd(&doctors, doctor);

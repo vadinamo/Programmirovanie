@@ -1,0 +1,7 @@
+Name: s
+Address: s
+Date of birth: 24.4.1998
+Diagnosis: s
+Admission date: 25.1.2021
+Discharge date: 19.11.2021
+Room number: 18
