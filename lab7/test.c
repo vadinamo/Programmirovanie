@@ -9,6 +9,8 @@ void test() {
     Doctor *doctor;
     patientList *patients;
     doctorList *doctors;
+    char c;
+    char *pChar = malloc(sizeof(char));;
 
     departments = NULL;
     doctors = NULL;
@@ -17,14 +19,17 @@ void test() {
     department = departmentCreate("Minsk central regional hospital", "Minski district, forest village 223041");
 
     for(i = 0; i < 20; i++) {
-        patient = patientCreate("1", "1", i, "1", i, i, i);
-        doctor = doctorCreate("1", "1", "1");
+        c = i + '0' + '1';
+        *pChar = c;
+        patient = patientCreate(pChar, pChar, i + 729000, pChar, i, i, i);
+        doctor = doctorCreate(pChar, pChar, pChar);
         departmentAddInformation(department, patient, doctor);
         doctorAdd(&doctors, doctor);
         patientAdd(&patients, patient);
         departmentAdd(&departments, department);
-        departmentCalculate(departments);
     }
+
+    medicalCart(patients, 18);
 
     departmentAddInformation(department, patient, doctor);
 

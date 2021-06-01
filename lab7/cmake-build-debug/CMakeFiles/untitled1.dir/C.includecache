@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/vadinamo/Documents/программирование/untitled1/departmentList.h
+stdio.h
+-
+stdlib.h
+-
+doctorList.h
+/Users/vadinamo/Documents/программирование/untitled1/doctorList.h
+patientList.h
+/Users/vadinamo/Documents/программирование/untitled1/patientList.h
+
+/Users/vadinamo/Documents/программирование/untitled1/doctorList.h
+stdio.h
+-
+stdlib.h
+-
+
+/Users/vadinamo/Documents/программирование/untitled1/main.c
+stdio.h
+-
+patientList.h
+/Users/vadinamo/Documents/программирование/untitled1/patientList.h
+doctorList.h
+/Users/vadinamo/Documents/программирование/untitled1/doctorList.h
+departmentList.h
+/Users/vadinamo/Documents/программирование/untitled1/departmentList.h
+
+/Users/vadinamo/Documents/программирование/untitled1/patientList.h
+stdio.h
+-
+stdlib.h
+-
+

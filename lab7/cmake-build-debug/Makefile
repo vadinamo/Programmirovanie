@@ -68,10 +68,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/vadinamo/Documents/программирование/lab7
+CMAKE_SOURCE_DIR = /Users/vadinamo/Documents/программирование/untitled1
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/vadinamo/Documents/программирование/lab7/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/vadinamo/Documents/программирование/untitled1/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -100,9 +100,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/vadinamo/Documents/программирование/lab7/cmake-build-debug/CMakeFiles /Users/vadinamo/Documents/программирование/lab7/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/vadinamo/Documents/программирование/untitled1/cmake-build-debug/CMakeFiles /Users/vadinamo/Documents/программирование/untitled1/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/vadinamo/Documents/программирование/lab7/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/vadinamo/Documents/программирование/untitled1/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -197,33 +197,6 @@ doctorList.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/doctorList.c.s
 .PHONY : doctorList.c.s
 
-functionTest.o: functionTest.c.o
-
-.PHONY : functionTest.o
-
-# target to build an object file
-functionTest.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/functionTest.c.o
-.PHONY : functionTest.c.o
-
-functionTest.i: functionTest.c.i
-
-.PHONY : functionTest.i
-
-# target to preprocess a source file
-functionTest.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/functionTest.c.i
-.PHONY : functionTest.c.i
-
-functionTest.s: functionTest.c.s
-
-.PHONY : functionTest.s
-
-# target to generate assembly for a file
-functionTest.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/functionTest.c.s
-.PHONY : functionTest.c.s
-
 main.o: main.c.o
 
 .PHONY : main.o
@@ -278,33 +251,6 @@ patientList.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/patientList.c.s
 .PHONY : patientList.c.s
 
-test.o: test.c.o
-
-.PHONY : test.o
-
-# target to build an object file
-test.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/test.c.o
-.PHONY : test.c.o
-
-test.i: test.c.i
-
-.PHONY : test.i
-
-# target to preprocess a source file
-test.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/test.c.i
-.PHONY : test.c.i
-
-test.s: test.c.s
-
-.PHONY : test.s
-
-# target to generate assembly for a file
-test.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/test.c.s
-.PHONY : test.c.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -320,18 +266,12 @@ help:
 	@echo "... doctorList.o"
 	@echo "... doctorList.i"
 	@echo "... doctorList.s"
-	@echo "... functionTest.o"
-	@echo "... functionTest.i"
-	@echo "... functionTest.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
 	@echo "... patientList.o"
 	@echo "... patientList.i"
 	@echo "... patientList.s"
-	@echo "... test.o"
-	@echo "... test.i"
-	@echo "... test.s"
 .PHONY : help
 
 

@@ -22,13 +22,13 @@ typedef struct doctorList
     struct doctorNode *tail;
 } doctorList;
 
- void doctorAdd(doctorList **list, Doctor *doctor);
+void doctorAdd(doctorList **list, Doctor *doctor);
 void doctorPrint(doctorList *list);
 
 
 Doctor *doctorCreate(char *name,
-                      char *post,
-                      char *speciality);
+                     char *post,
+                     char *speciality);
 
 
 void doctorInformation(Doctor *doctor);

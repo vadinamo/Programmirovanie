@@ -96,13 +96,14 @@ void departmentCalculate(departmentList *list) {
         }
 
         for(i = 0; i < 20; i++) {
-            min =findMin(head -> department -> patient[i].dischargeDate, min);
+            min = findMin(head -> department -> patient[i].dischargeDate, min);
         }
         head = head->next;
     }
 
-    printf("The place will be vacated on %d\n", min);
+    printf("The place will be vacated on %d.%d.%d\n", dayConvert(min), monthConvert(min), yearConvert(min));
 }
+
 
 Doctor *doctorCreate(char *name,
                      char *post,
@@ -189,33 +190,46 @@ Patient *patientCreate(char *name,
     return patient;
 }
 
+int yearConvert(int date) {
+    return date / 365;
+}
+
+int monthConvert(int date) {
+    return (date - yearConvert(date) * 365) / 31;
+}
+
+int dayConvert(int date) {
+    return date - yearConvert(date) * 365 - monthConvert(date) * 31;
+}
+
 void patientInformation(Patient *patient) {
+
     printf("Name: %s\n"
            "Address: %s\n"
-           "Date of birth: %d\n"
+           "Date of birth: %d.%d.%d\n"
            "Diagnosis: %s\n"
-           "Admission date: %d\n"
-           "Discharge date: %d\n"
+           "Admission date: %d.%d.%d\n"
+           "Discharge date: %d.%d.%d\n"
            "Room number: %d\n\n",
            patient -> name,
            patient -> address,
-           patient -> dateOfBirth,
+           dayConvert(patient -> dateOfBirth), monthConvert(patient -> dateOfBirth), yearConvert(patient -> dateOfBirth),
            patient -> diagnosis,
-           patient -> admissionDate,
-           patient -> dischargeDate,
+           dayConvert(patient -> admissionDate), monthConvert(patient -> admissionDate), yearConvert(patient -> admissionDate),
+           dayConvert(patient -> dischargeDate), monthConvert(patient -> dischargeDate), yearConvert(patient -> dischargeDate),
            patient -> roomNumber
     );
 }
 
 
-void patientAdd(patientList **list, Patient *patient)
-{
+void patientAdd(patientList **list, Patient *patient) {
     if (*list == NULL)
     {
         *list = (patientList *)malloc(sizeof(patientList));
         patientNode *temp = (patientNode *)malloc(sizeof(patientNode));
         temp->patient = patient;
         temp->next = temp->prev = NULL;
+        temp -> id = 0;
         (*list)->head = (*list)->tail = temp;
         return;
     }
@@ -227,8 +241,74 @@ void patientAdd(patientList **list, Patient *patient)
 
         temp->prev = (*list)->tail;
         (*list)->tail->next = temp;
+        temp -> id = temp -> prev -> id + 1;
 
         (*list)->tail = temp;
         return;
     }
+}
+
+void printMedicalCart(Patient *patient) {
+    FILE *file;
+    char name[] = "MedicalCart.txt";
+    char str[128];
+
+    if ((file = fopen(name, "w")) == NULL)
+    {
+        printf("File open error.\n");
+        return;
+    }
+
+    fputs("Name: ", file);
+    fputs(patient -> name, file);
+    fputs("\n", file);
+
+    fputs("Address: ", file);
+    fputs(patient -> address, file);
+    fputs("\n", file);
+
+    fputs("Date of birth: ", file);
+    sprintf(str, "%d.%d.%d\n", dayConvert(patient -> dateOfBirth), monthConvert(patient -> dateOfBirth), yearConvert(patient -> dateOfBirth));
+    fputs(str, file);
+
+    fputs("Diagnosis: ", file);
+    fputs(patient -> diagnosis, file);
+    fputs("\n", file);
+
+    fputs("Admission date: ", file);
+    sprintf(str, "%d.%d.%d\n", dayConvert(patient -> admissionDate), monthConvert(patient -> admissionDate), yearConvert(patient -> admissionDate));
+    fputs(str, file);
+
+    fputs("Discharge date: ", file);
+    sprintf(str, "%d.%d.%d\n", dayConvert(patient -> dischargeDate), monthConvert(patient -> dischargeDate), yearConvert(patient -> dischargeDate));
+    fputs(str, file);
+
+    fputs("Room number: ", file);
+    sprintf(str, "%d\n", patient -> roomNumber);
+    fputs(str, file);
+
+    fclose(file);
+
+    printf("Medical cart was created successfully.\n");
+}
+
+void medicalCart(patientList *list, int id) {
+    patientNode *temp;
+    Patient *sought = NULL;
+
+    temp = list->head;
+    while (temp != NULL)
+    {
+        if(temp -> id == id) {
+            sought = temp -> patient;
+            break;
+        }
+        temp = temp->next;
+    }
+
+    if(sought != NULL)
+        printMedicalCart(sought);
+
+    else
+        printf("Incorrect ID.\n");
 }

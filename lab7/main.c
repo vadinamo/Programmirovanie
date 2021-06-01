@@ -1,3 +1,10 @@
+/*Больница состоит из нескольких отделений. В каждом отделении находится определенное количество палат.
+ * Программа формирует список отделений (название, месторасположение), список врачей (ФИО, должность,
+ * специальность), списки пациентов (ФИО, адрес, год рождения, диагноз, дата поступления, дата выписки
+ * номер палаты). Для каждого пациента назначается свой курс лечения, он вводится пользователем
+ * программы. Подготовка к печати истории болезни. Расчет нагрузка на врача и отделение. Если отделение
+ * переполнено – вывод возможной даты принятия нового больного.
+ */
 #include <stdio.h>
 #include "patientList.h"
 #include "doctorList.h"
@@ -15,6 +22,9 @@ int main() {
     patientList *patients;
     doctorList *doctors;
 
+    char c;
+    char *pChar = malloc(sizeof(char));
+
     departments = NULL;
     doctors = NULL;
     patients = NULL;
@@ -22,8 +32,11 @@ int main() {
     department = departmentCreate("Minsk central regional hospital", "Minski district, forest village 223041");
 
     for(i = 0; i < 20; i++) {
-        patient = patientCreate("1", "1", i, "1", i, i, i);
-        doctor = doctorCreate("1", "1", "1");
+        c = i + '0' + '1';
+        *pChar = c;
+
+        patient = patientCreate(pChar, pChar, i + 729400, pChar, i + 737703, i + 738007, i);
+        doctor = doctorCreate(pChar, pChar, pChar);
         departmentAddInformation(department, patient, doctor);
         doctorAdd(&doctors, doctor);
         patientAdd(&patients, patient);
@@ -32,8 +45,8 @@ int main() {
 
 
     while (pick != 0) {
-        printf("1.Show patients.\n2.Show departments.\n"
-               "3.Show doctors.\n4.Load calculation.\n0.Exit.\n");
+        printf("1.Show patients.\n2.Display a medical history.\n3.Show departments.\n"
+               "4.Show doctors.\n5.Load calculation.\n0.Exit.\n");
 
         scanf("%d", &pick);
         switch (pick) {
@@ -42,14 +55,20 @@ int main() {
                 break;
 
             case 2:
-                departmentPrint(departments);
+                printf("Enter patient number.\n");
+                scanf("%d", &i);
+                medicalCart(patients, i);
                 break;
 
             case 3:
-                doctorPrint(doctors);
+                departmentPrint(departments);
                 break;
 
             case 4:
+                doctorPrint(doctors);
+                break;
+
+            case 5:
                 departmentCalculate(departments);
                 break;
 

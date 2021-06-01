@@ -18,6 +18,7 @@ typedef struct patientNode
     Patient *patient;
     struct patientNode *next;
     struct patientNode *prev;
+    int id;
 } patientNode;
 
 typedef struct patientList
@@ -26,8 +27,8 @@ typedef struct patientList
     patientNode *tail;
 } patientList;
 
- void patientAdd(patientList **list, Patient *patient);
- void patientPrint(patientList *patient);
+void patientAdd(patientList **list, Patient *patient);
+void patientPrint(patientList *patient);
 
 Patient *patientCreate(char *name,
                        char *address,
@@ -38,7 +39,10 @@ Patient *patientCreate(char *name,
                        int roomNumber);
 
 void patientInformation(Patient *patient);
+void printMedicalCart(Patient *patient);
+void medicalCart(patientList *list, int id);
 
-
-
+int yearConvert(int date);
+int monthConvert(int date);
+int dayConvert(int date);
 #endif

@@ -2,8 +2,8 @@
 #include <string.h>
 
 Doctor *doctorCreate(char *name,
-                      char *post,
-                      char *speciality) {
+                     char *post,
+                     char *speciality) {
     Doctor *doctor = (Doctor *)malloc(sizeof(Doctor));
 
     char *n = (char *)malloc(128 * sizeof(char));

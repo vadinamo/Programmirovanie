@@ -63,10 +63,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/vadinamo/Documents/программирование/lab7
+CMAKE_SOURCE_DIR = /Users/vadinamo/Documents/программирование/untitled1
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/vadinamo/Documents/программирование/lab7/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/vadinamo/Documents/программирование/untitled1/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/untitled1.dir/depend.make
@@ -79,103 +79,73 @@ include CMakeFiles/untitled1.dir/flags.make
 
 CMakeFiles/untitled1.dir/main.c.o: CMakeFiles/untitled1.dir/flags.make
 CMakeFiles/untitled1.dir/main.c.o: ../main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vadinamo/Documents/программирование/lab7/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/untitled1.dir/main.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/untitled1.dir/main.c.o   -c /Users/vadinamo/Documents/программирование/lab7/main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vadinamo/Documents/программирование/untitled1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/untitled1.dir/main.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/untitled1.dir/main.c.o   -c /Users/vadinamo/Documents/программирование/untitled1/main.c
 
 CMakeFiles/untitled1.dir/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/untitled1.dir/main.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vadinamo/Documents/программирование/lab7/main.c > CMakeFiles/untitled1.dir/main.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vadinamo/Documents/программирование/untitled1/main.c > CMakeFiles/untitled1.dir/main.c.i
 
 CMakeFiles/untitled1.dir/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/untitled1.dir/main.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vadinamo/Documents/программирование/lab7/main.c -o CMakeFiles/untitled1.dir/main.c.s
-
-CMakeFiles/untitled1.dir/patientList.c.o: CMakeFiles/untitled1.dir/flags.make
-CMakeFiles/untitled1.dir/patientList.c.o: ../patientList.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vadinamo/Documents/программирование/lab7/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/untitled1.dir/patientList.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/untitled1.dir/patientList.c.o   -c /Users/vadinamo/Documents/программирование/lab7/patientList.c
-
-CMakeFiles/untitled1.dir/patientList.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/untitled1.dir/patientList.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vadinamo/Documents/программирование/lab7/patientList.c > CMakeFiles/untitled1.dir/patientList.c.i
-
-CMakeFiles/untitled1.dir/patientList.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/untitled1.dir/patientList.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vadinamo/Documents/программирование/lab7/patientList.c -o CMakeFiles/untitled1.dir/patientList.c.s
-
-CMakeFiles/untitled1.dir/doctorList.c.o: CMakeFiles/untitled1.dir/flags.make
-CMakeFiles/untitled1.dir/doctorList.c.o: ../doctorList.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vadinamo/Documents/программирование/lab7/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/untitled1.dir/doctorList.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/untitled1.dir/doctorList.c.o   -c /Users/vadinamo/Documents/программирование/lab7/doctorList.c
-
-CMakeFiles/untitled1.dir/doctorList.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/untitled1.dir/doctorList.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vadinamo/Documents/программирование/lab7/doctorList.c > CMakeFiles/untitled1.dir/doctorList.c.i
-
-CMakeFiles/untitled1.dir/doctorList.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/untitled1.dir/doctorList.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vadinamo/Documents/программирование/lab7/doctorList.c -o CMakeFiles/untitled1.dir/doctorList.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vadinamo/Documents/программирование/untitled1/main.c -o CMakeFiles/untitled1.dir/main.c.s
 
 CMakeFiles/untitled1.dir/departmentList.c.o: CMakeFiles/untitled1.dir/flags.make
 CMakeFiles/untitled1.dir/departmentList.c.o: ../departmentList.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vadinamo/Documents/программирование/lab7/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/untitled1.dir/departmentList.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/untitled1.dir/departmentList.c.o   -c /Users/vadinamo/Documents/программирование/lab7/departmentList.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vadinamo/Documents/программирование/untitled1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/untitled1.dir/departmentList.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/untitled1.dir/departmentList.c.o   -c /Users/vadinamo/Documents/программирование/untitled1/departmentList.c
 
 CMakeFiles/untitled1.dir/departmentList.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/untitled1.dir/departmentList.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vadinamo/Documents/программирование/lab7/departmentList.c > CMakeFiles/untitled1.dir/departmentList.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vadinamo/Documents/программирование/untitled1/departmentList.c > CMakeFiles/untitled1.dir/departmentList.c.i
 
 CMakeFiles/untitled1.dir/departmentList.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/untitled1.dir/departmentList.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vadinamo/Documents/программирование/lab7/departmentList.c -o CMakeFiles/untitled1.dir/departmentList.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vadinamo/Documents/программирование/untitled1/departmentList.c -o CMakeFiles/untitled1.dir/departmentList.c.s
 
-CMakeFiles/untitled1.dir/functionTest.c.o: CMakeFiles/untitled1.dir/flags.make
-CMakeFiles/untitled1.dir/functionTest.c.o: ../functionTest.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vadinamo/Documents/программирование/lab7/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/untitled1.dir/functionTest.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/untitled1.dir/functionTest.c.o   -c /Users/vadinamo/Documents/программирование/lab7/functionTest.c
+CMakeFiles/untitled1.dir/doctorList.c.o: CMakeFiles/untitled1.dir/flags.make
+CMakeFiles/untitled1.dir/doctorList.c.o: ../doctorList.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vadinamo/Documents/программирование/untitled1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/untitled1.dir/doctorList.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/untitled1.dir/doctorList.c.o   -c /Users/vadinamo/Documents/программирование/untitled1/doctorList.c
 
-CMakeFiles/untitled1.dir/functionTest.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/untitled1.dir/functionTest.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vadinamo/Documents/программирование/lab7/functionTest.c > CMakeFiles/untitled1.dir/functionTest.c.i
+CMakeFiles/untitled1.dir/doctorList.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/untitled1.dir/doctorList.c.i"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vadinamo/Documents/программирование/untitled1/doctorList.c > CMakeFiles/untitled1.dir/doctorList.c.i
 
-CMakeFiles/untitled1.dir/functionTest.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/untitled1.dir/functionTest.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vadinamo/Documents/программирование/lab7/functionTest.c -o CMakeFiles/untitled1.dir/functionTest.c.s
+CMakeFiles/untitled1.dir/doctorList.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/untitled1.dir/doctorList.c.s"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vadinamo/Documents/программирование/untitled1/doctorList.c -o CMakeFiles/untitled1.dir/doctorList.c.s
 
-CMakeFiles/untitled1.dir/test.c.o: CMakeFiles/untitled1.dir/flags.make
-CMakeFiles/untitled1.dir/test.c.o: ../test.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vadinamo/Documents/программирование/lab7/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/untitled1.dir/test.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/untitled1.dir/test.c.o   -c /Users/vadinamo/Documents/программирование/lab7/test.c
+CMakeFiles/untitled1.dir/patientList.c.o: CMakeFiles/untitled1.dir/flags.make
+CMakeFiles/untitled1.dir/patientList.c.o: ../patientList.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vadinamo/Documents/программирование/untitled1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/untitled1.dir/patientList.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/untitled1.dir/patientList.c.o   -c /Users/vadinamo/Documents/программирование/untitled1/patientList.c
 
-CMakeFiles/untitled1.dir/test.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/untitled1.dir/test.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vadinamo/Documents/программирование/lab7/test.c > CMakeFiles/untitled1.dir/test.c.i
+CMakeFiles/untitled1.dir/patientList.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/untitled1.dir/patientList.c.i"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vadinamo/Documents/программирование/untitled1/patientList.c > CMakeFiles/untitled1.dir/patientList.c.i
 
-CMakeFiles/untitled1.dir/test.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/untitled1.dir/test.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vadinamo/Documents/программирование/lab7/test.c -o CMakeFiles/untitled1.dir/test.c.s
+CMakeFiles/untitled1.dir/patientList.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/untitled1.dir/patientList.c.s"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vadinamo/Documents/программирование/untitled1/patientList.c -o CMakeFiles/untitled1.dir/patientList.c.s
 
 # Object files for target untitled1
 untitled1_OBJECTS = \
 "CMakeFiles/untitled1.dir/main.c.o" \
-"CMakeFiles/untitled1.dir/patientList.c.o" \
-"CMakeFiles/untitled1.dir/doctorList.c.o" \
 "CMakeFiles/untitled1.dir/departmentList.c.o" \
-"CMakeFiles/untitled1.dir/functionTest.c.o" \
-"CMakeFiles/untitled1.dir/test.c.o"
+"CMakeFiles/untitled1.dir/doctorList.c.o" \
+"CMakeFiles/untitled1.dir/patientList.c.o"
 
 # External object files for target untitled1
 untitled1_EXTERNAL_OBJECTS =
 
 untitled1: CMakeFiles/untitled1.dir/main.c.o
-untitled1: CMakeFiles/untitled1.dir/patientList.c.o
-untitled1: CMakeFiles/untitled1.dir/doctorList.c.o
 untitled1: CMakeFiles/untitled1.dir/departmentList.c.o
-untitled1: CMakeFiles/untitled1.dir/functionTest.c.o
-untitled1: CMakeFiles/untitled1.dir/test.c.o
+untitled1: CMakeFiles/untitled1.dir/doctorList.c.o
+untitled1: CMakeFiles/untitled1.dir/patientList.c.o
 untitled1: CMakeFiles/untitled1.dir/build.make
 untitled1: CMakeFiles/untitled1.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/vadinamo/Documents/программирование/lab7/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking C executable untitled1"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/vadinamo/Documents/программирование/untitled1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C executable untitled1"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/untitled1.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -188,6 +158,6 @@ CMakeFiles/untitled1.dir/clean:
 .PHONY : CMakeFiles/untitled1.dir/clean
 
 CMakeFiles/untitled1.dir/depend:
-	cd /Users/vadinamo/Documents/программирование/lab7/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/vadinamo/Documents/программирование/lab7 /Users/vadinamo/Documents/программирование/lab7 /Users/vadinamo/Documents/программирование/lab7/cmake-build-debug /Users/vadinamo/Documents/программирование/lab7/cmake-build-debug /Users/vadinamo/Documents/программирование/lab7/cmake-build-debug/CMakeFiles/untitled1.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/vadinamo/Documents/программирование/untitled1/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/vadinamo/Documents/программирование/untitled1 /Users/vadinamo/Documents/программирование/untitled1 /Users/vadinamo/Documents/программирование/untitled1/cmake-build-debug /Users/vadinamo/Documents/программирование/untitled1/cmake-build-debug /Users/vadinamo/Documents/программирование/untitled1/cmake-build-debug/CMakeFiles/untitled1.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/untitled1.dir/depend
 

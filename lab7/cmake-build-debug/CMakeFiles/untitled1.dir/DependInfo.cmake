@@ -4,12 +4,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/Users/vadinamo/Documents/программирование/lab7/departmentList.c" "/Users/vadinamo/Documents/программирование/lab7/cmake-build-debug/CMakeFiles/untitled1.dir/departmentList.c.o"
-  "/Users/vadinamo/Documents/программирование/lab7/doctorList.c" "/Users/vadinamo/Documents/программирование/lab7/cmake-build-debug/CMakeFiles/untitled1.dir/doctorList.c.o"
-  "/Users/vadinamo/Documents/программирование/lab7/functionTest.c" "/Users/vadinamo/Documents/программирование/lab7/cmake-build-debug/CMakeFiles/untitled1.dir/functionTest.c.o"
-  "/Users/vadinamo/Documents/программирование/lab7/main.c" "/Users/vadinamo/Documents/программирование/lab7/cmake-build-debug/CMakeFiles/untitled1.dir/main.c.o"
-  "/Users/vadinamo/Documents/программирование/lab7/patientList.c" "/Users/vadinamo/Documents/программирование/lab7/cmake-build-debug/CMakeFiles/untitled1.dir/patientList.c.o"
-  "/Users/vadinamo/Documents/программирование/lab7/test.c" "/Users/vadinamo/Documents/программирование/lab7/cmake-build-debug/CMakeFiles/untitled1.dir/test.c.o"
+  "/Users/vadinamo/Documents/программирование/untitled1/departmentList.c" "/Users/vadinamo/Documents/программирование/untitled1/cmake-build-debug/CMakeFiles/untitled1.dir/departmentList.c.o"
+  "/Users/vadinamo/Documents/программирование/untitled1/doctorList.c" "/Users/vadinamo/Documents/программирование/untitled1/cmake-build-debug/CMakeFiles/untitled1.dir/doctorList.c.o"
+  "/Users/vadinamo/Documents/программирование/untitled1/main.c" "/Users/vadinamo/Documents/программирование/untitled1/cmake-build-debug/CMakeFiles/untitled1.dir/main.c.o"
+  "/Users/vadinamo/Documents/программирование/untitled1/patientList.c" "/Users/vadinamo/Documents/программирование/untitled1/cmake-build-debug/CMakeFiles/untitled1.dir/patientList.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")
 

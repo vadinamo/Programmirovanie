@@ -100,5 +100,5 @@ void departmentCalculate(departmentList *list) {
         head = head->next;
     }
 
-    printf("The place will be vacated on %d\n", min);
+    printf("The place will be vacated on %d.%d.%d\n", dayConvert(min), monthConvert(min), yearConvert(min));
 }
