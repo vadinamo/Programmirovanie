@@ -97,6 +97,7 @@ void departmentCalculate(departmentList *list) {
         for(i = 0; i < 20; i++) {
             min = findMin(head -> department -> patient[i].dischargeDate, min);
         }
+
         head = head->next;
     }
 

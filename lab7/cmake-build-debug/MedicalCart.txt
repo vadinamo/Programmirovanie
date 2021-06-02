@@ -1,7 +1,7 @@
-Name: b
-Address: b
-Date of birth: 7.4.1998
-Diagnosis: b
-Admission date: 8.1.2021
-Discharge date: 2.11.2021
-Room number: 1
+Name: f
+Address: f
+Date of birth: 11.4.1998
+Diagnosis: f
+Admission date: 12.1.2021
+Discharge date: 6.11.2021
+Room number: 5
